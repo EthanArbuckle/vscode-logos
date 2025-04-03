@@ -1,0 +1,38 @@
+{
+    "name": "logos-language",
+    "displayName": "Logos Syntax Highlighting",
+    "description": "Syntax highlighting for Logos (iOS jailbreak tweak language used in Theos)",
+    "version": "1.0.0",
+    "publisher": "Ethan Arbuckle",
+    "engines": {
+      "vscode": "^1.60.0"
+    },
+    "categories": [
+      "Programming Languages"
+    ],
+    "contributes": {
+      "languages": [
+        {
+          "id": "logos",
+          "aliases": [
+            "Logos",
+            "logos"
+          ],
+          "extensions": [
+            ".x",
+            ".xm",
+            ".xi",
+            ".xmi"
+          ],
+          "configuration": "./language-configuration.json"
+        }
+      ],
+      "grammars": [
+        {
+          "language": "logos",
+          "scopeName": "source.logos",
+          "path": "./syntaxes/logos.tmLanguage.json"
+        }
+      ]
+    }
+  }
